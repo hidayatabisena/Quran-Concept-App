@@ -11,7 +11,7 @@ import SwiftUI
 struct QuranApp: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            ContentView()
         }
     }
 }

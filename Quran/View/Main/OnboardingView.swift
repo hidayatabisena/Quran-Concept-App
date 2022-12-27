@@ -10,6 +10,7 @@ import AVFoundation
 
 struct OnboardingView: View {
     // MARK: - PROPERTIES
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
     @State private var isAnimating: Bool = false
     
     // MARK: - BODY
@@ -41,6 +42,7 @@ struct OnboardingView: View {
                     
                     Button {
                         playSound(sound: "chimeup", type: "mp3")
+                        isOnboardingViewActive = false
                     } label: {
                         Text("Get Started")
                             .font(.custom("Poppins", size: 18).weight(.semibold))

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     // MARK: - PROPERTIES
+    @AppStorage("onboarding") var isOnboardingViewActive: Bool = false
     @State private var tabSelection: Int = 0
     
     // MARK: - BODY
