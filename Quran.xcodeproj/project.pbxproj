@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5308EB0C295B024900B55E64 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5308EB0B295B024900B55E64 /* chimeup.mp3 */; };
+		5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEFD295A82F5005FEB0C /* OnboardingView.swift */; };
+		5364DEFF295A873F005FEB0C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544412959BD58000D9210 /* Poppins-Black.ttf */; };
+		5364DF00295A873F005FEB0C /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544422959BD58000D9210 /* Poppins-BlackItalic.ttf */; };
+		5364DF01295A873F005FEB0C /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544372959BD58000D9210 /* Poppins-Bold.ttf */; };
+		5364DF02295A873F005FEB0C /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544402959BD58000D9210 /* Poppins-BoldItalic.ttf */; };
+		5364DF03295A873F005FEB0C /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5395443D2959BD58000D9210 /* Poppins-ExtraBold.ttf */; };
+		5364DF04295A873F005FEB0C /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5395443A2959BD58000D9210 /* Poppins-ExtraBoldItalic.ttf */; };
+		5364DF05295A873F005FEB0C /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544392959BD58000D9210 /* Poppins-ExtraLight.ttf */; };
+		5364DF06295A873F005FEB0C /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5395443C2959BD58000D9210 /* Poppins-ExtraLightItalic.ttf */; };
+		5364DF07295A873F005FEB0C /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544362959BD58000D9210 /* Poppins-Italic.ttf */; };
+		5364DF08295A873F005FEB0C /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544382959BD58000D9210 /* Poppins-Light.ttf */; };
+		5364DF09295A873F005FEB0C /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544342959BD58000D9210 /* Poppins-LightItalic.ttf */; };
+		5364DF0A295A873F005FEB0C /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5395443B2959BD58000D9210 /* Poppins-Medium.ttf */; };
+		5364DF0B295A873F005FEB0C /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544352959BD58000D9210 /* Poppins-MediumItalic.ttf */; };
+		5364DF0C295A873F005FEB0C /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544322959BD58000D9210 /* Poppins-Regular.ttf */; };
+		5364DF0D295A873F005FEB0C /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544332959BD58000D9210 /* Poppins-SemiBold.ttf */; };
+		5364DF0E295A873F005FEB0C /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544312959BD58000D9210 /* Poppins-SemiBoldItalic.ttf */; };
+		5364DF0F295A873F005FEB0C /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5395443E2959BD58000D9210 /* Poppins-Thin.ttf */; };
+		5364DF10295A873F005FEB0C /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5395443F2959BD58000D9210 /* Poppins-ThinItalic.ttf */; };
 		539544202959BCB3000D9210 /* QuranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5395441F2959BCB3000D9210 /* QuranApp.swift */; };
 		539544222959BCB3000D9210 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539544212959BCB3000D9210 /* ContentView.swift */; };
 		539544242959BCB4000D9210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539544232959BCB4000D9210 /* Assets.xcassets */; };
@@ -15,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5308EB0B295B024900B55E64 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		5364DEFD295A82F5005FEB0C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5395441C2959BCB3000D9210 /* Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5395441F2959BCB3000D9210 /* QuranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranApp.swift; sourceTree = "<group>"; };
 		539544212959BCB3000D9210 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +117,7 @@
 		5395442D2959BCC8000D9210 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5308EB0B295B024900B55E64 /* chimeup.mp3 */,
 				539544302959BD33000D9210 /* Font */,
 			);
 			path = Resources;
@@ -144,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				539544452959C9B0000D9210 /* MainView.swift */,
+				5364DEFD295A82F5005FEB0C /* OnboardingView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -206,6 +230,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5364DEFF295A873F005FEB0C /* Poppins-Black.ttf in Resources */,
+				5364DF00295A873F005FEB0C /* Poppins-BlackItalic.ttf in Resources */,
+				5364DF01295A873F005FEB0C /* Poppins-Bold.ttf in Resources */,
+				5364DF02295A873F005FEB0C /* Poppins-BoldItalic.ttf in Resources */,
+				5364DF03295A873F005FEB0C /* Poppins-ExtraBold.ttf in Resources */,
+				5364DF04295A873F005FEB0C /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				5364DF05295A873F005FEB0C /* Poppins-ExtraLight.ttf in Resources */,
+				5364DF06295A873F005FEB0C /* Poppins-ExtraLightItalic.ttf in Resources */,
+				5364DF07295A873F005FEB0C /* Poppins-Italic.ttf in Resources */,
+				5308EB0C295B024900B55E64 /* chimeup.mp3 in Resources */,
+				5364DF08295A873F005FEB0C /* Poppins-Light.ttf in Resources */,
+				5364DF09295A873F005FEB0C /* Poppins-LightItalic.ttf in Resources */,
+				5364DF0A295A873F005FEB0C /* Poppins-Medium.ttf in Resources */,
+				5364DF0B295A873F005FEB0C /* Poppins-MediumItalic.ttf in Resources */,
+				5364DF0C295A873F005FEB0C /* Poppins-Regular.ttf in Resources */,
+				5364DF0D295A873F005FEB0C /* Poppins-SemiBold.ttf in Resources */,
+				5364DF0E295A873F005FEB0C /* Poppins-SemiBoldItalic.ttf in Resources */,
+				5364DF0F295A873F005FEB0C /* Poppins-Thin.ttf in Resources */,
+				5364DF10295A873F005FEB0C /* Poppins-ThinItalic.ttf in Resources */,
 				539544272959BCB4000D9210 /* Preview Assets.xcassets in Resources */,
 				539544242959BCB4000D9210 /* Assets.xcassets in Resources */,
 			);
@@ -219,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				539544222959BCB3000D9210 /* ContentView.swift in Sources */,
+				5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */,
 				539544462959C9B0000D9210 /* MainView.swift in Sources */,
 				539544202959BCB3000D9210 /* QuranApp.swift in Sources */,
 			);
