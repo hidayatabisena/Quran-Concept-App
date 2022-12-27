@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct OnboardingView: View {
     // MARK: - PROPERTIES
@@ -39,10 +40,7 @@ struct OnboardingView: View {
                         .animation(.easeOut(duration: 1), value: isAnimating)
                     
                     Button {
-                        withAnimation {
-                            
-                        }
-                        print("Button Get Started tapped")
+                        playSound(sound: "chimeup", type: "mp3")
                     } label: {
                         Text("Get Started")
                             .font(.custom("Poppins", size: 18).weight(.semibold))
@@ -50,10 +48,10 @@ struct OnboardingView: View {
                             .foregroundColor(Color("RegularDark"))
                             .background(Color("PeachDark"))
                             .cornerRadius(30)
-                            .offset(y: 225)
-                            .opacity(isAnimating ? 1 : 0)
-                            .animation(.easeOut(duration: 1).delay(0.5), value: isAnimating)
                     }
+                    .offset(y: 225)
+                    .opacity(isAnimating ? 1 : 0)
+                    .animation(.easeOut(duration: 1).delay(0.5), value: isAnimating)
 
                     
                 } //: ZSTACK
@@ -66,7 +64,7 @@ struct OnboardingView: View {
             .foregroundColor(.white)
             
         } //: ZSTACK
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
