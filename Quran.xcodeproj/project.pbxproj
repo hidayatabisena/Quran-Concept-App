@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5308EB0C295B024900B55E64 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5308EB0B295B024900B55E64 /* chimeup.mp3 */; };
 		5308EB0F295B039300B55E64 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308EB0E295B039300B55E64 /* AudioPlayer.swift */; };
+		53090133295B284400339BE1 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090132295B284400339BE1 /* NavigationBarView.swift */; };
+		53090135295B2CBE00339BE1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090134295B2CBE00339BE1 /* HomeView.swift */; };
 		5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEFD295A82F5005FEB0C /* OnboardingView.swift */; };
 		5364DEFF295A873F005FEB0C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544412959BD58000D9210 /* Poppins-Black.ttf */; };
 		5364DF00295A873F005FEB0C /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544422959BD58000D9210 /* Poppins-BlackItalic.ttf */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		5308EB0B295B024900B55E64 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		5308EB0E295B039300B55E64 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		53090132295B284400339BE1 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		53090134295B2CBE00339BE1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5364DEFD295A82F5005FEB0C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5395441C2959BCB3000D9210 /* Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5395441F2959BCB3000D9210 /* QuranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranApp.swift; sourceTree = "<group>"; };
@@ -83,6 +87,22 @@
 				5308EB0E295B039300B55E64 /* AudioPlayer.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		53090130295B277800339BE1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				53090134295B2CBE00339BE1 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		53090131295B279100339BE1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				53090132295B284400339BE1 /* NavigationBarView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		539544132959BCB3000D9210 = {
@@ -137,6 +157,8 @@
 		5395442E2959BCEA000D9210 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				53090131295B279100339BE1 /* Component */,
+				53090130295B277800339BE1 /* Home */,
 				539544442959C99F000D9210 /* Main */,
 			);
 			path = View;
@@ -273,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				539544222959BCB3000D9210 /* ContentView.swift in Sources */,
+				53090135295B2CBE00339BE1 /* HomeView.swift in Sources */,
 				5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */,
+				53090133295B284400339BE1 /* NavigationBarView.swift in Sources */,
 				5308EB0F295B039300B55E64 /* AudioPlayer.swift in Sources */,
 				539544462959C9B0000D9210 /* MainView.swift in Sources */,
 				539544202959BCB3000D9210 /* QuranApp.swift in Sources */,
