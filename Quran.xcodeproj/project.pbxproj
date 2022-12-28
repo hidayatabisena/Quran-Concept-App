@@ -11,6 +11,7 @@
 		5308EB0F295B039300B55E64 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5308EB0E295B039300B55E64 /* AudioPlayer.swift */; };
 		53090133295B284400339BE1 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090132295B284400339BE1 /* NavigationBarView.swift */; };
 		53090135295B2CBE00339BE1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090134295B2CBE00339BE1 /* HomeView.swift */; };
+		53534CE6295C0C6A005F2341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */; };
 		5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEFD295A82F5005FEB0C /* OnboardingView.swift */; };
 		5364DEFF295A873F005FEB0C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544412959BD58000D9210 /* Poppins-Black.ttf */; };
 		5364DF00295A873F005FEB0C /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544422959BD58000D9210 /* Poppins-BlackItalic.ttf */; };
@@ -45,6 +46,7 @@
 		5308EB0E295B039300B55E64 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		53090132295B284400339BE1 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		53090134295B2CBE00339BE1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5364DEFD295A82F5005FEB0C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5395441C2959BCB3000D9210 /* Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5395441F2959BCB3000D9210 /* QuranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranApp.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				539544432959BDD9000D9210 /* Info.plist */,
 				539544212959BCB3000D9210 /* ContentView.swift */,
 				5395441F2959BCB3000D9210 /* QuranApp.swift */,
+				53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */,
 				539544232959BCB4000D9210 /* Assets.xcassets */,
 				5395442F2959BCFC000D9210 /* Model */,
 				539544252959BCB4000D9210 /* Preview Content */,
@@ -281,6 +284,7 @@
 				5364DF05295A873F005FEB0C /* Poppins-ExtraLight.ttf in Resources */,
 				5364DF06295A873F005FEB0C /* Poppins-ExtraLightItalic.ttf in Resources */,
 				5364DF07295A873F005FEB0C /* Poppins-Italic.ttf in Resources */,
+				53534CE6295C0C6A005F2341 /* LaunchScreen.storyboard in Resources */,
 				5308EB0C295B024900B55E64 /* chimeup.mp3 in Resources */,
 				5364DF08295A873F005FEB0C /* Poppins-Light.ttf in Resources */,
 				5364DF09295A873F005FEB0C /* Poppins-LightItalic.ttf in Resources */,
@@ -447,6 +451,7 @@
 				INFOPLIST_FILE = Quran/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -477,6 +482,7 @@
 				INFOPLIST_FILE = Quran/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
