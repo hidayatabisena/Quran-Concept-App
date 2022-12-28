@@ -16,7 +16,6 @@ struct HomeView: View {
     // MARK: - BODY
     var body: some View {
         let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        
         let window = windowScene?.windows.first
         
         ZStack {
@@ -31,7 +30,7 @@ struct HomeView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     greetingsCard
                     
-                    // MARK: - SEGMENTED CONTROL
+                    // MARK: - SEGMENT MENU
                     VStack {
                         SegmentedControlView(items: items, selection: $select)
                             .padding(.vertical, 16)
