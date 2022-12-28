@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct NavigationBarView: View {
-    // MARK: - PROPERTIES
-    @State private var isAnimated: Bool = false
+//    // MARK: - PROPERTIES
+//    @State private var isAnimated: Bool = false
     
     // MARK: - BODY
     var body: some View {
@@ -27,13 +27,13 @@ struct NavigationBarView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 111, height: 30, alignment: .center)
-                .opacity(isAnimated ? 1 : 0)
-                .offset(x: 0, y: isAnimated ? 0 : -25)
-                .onAppear {
-                    withAnimation(.easeOut(duration: 0.5)) {
-                        isAnimated.toggle()
-                    }
-                }
+//                .opacity(isAnimated ? 1 : 0)
+//                .offset(x: 0, y: isAnimated ? 0 : -25)
+//                .onAppear {
+//                    withAnimation(.easeOut(duration: 0.5)) {
+//                        isAnimated.toggle()
+//                    }
+//                }
             
             Spacer()
             

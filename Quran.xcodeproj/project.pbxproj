@@ -35,6 +35,8 @@
 		539544242959BCB4000D9210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539544232959BCB4000D9210 /* Assets.xcassets */; };
 		539544272959BCB4000D9210 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539544262959BCB4000D9210 /* Preview Assets.xcassets */; };
 		539544462959C9B0000D9210 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539544452959C9B0000D9210 /* MainView.swift */; };
+		53962A3B295BC7E1006EFDB2 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53962A3A295BC7E1006EFDB2 /* SegmentedControlView.swift */; };
+		53962A3D295BCA3E006EFDB2 /* Preferences+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53962A3C295BCA3E006EFDB2 /* Preferences+Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		539544422959BD58000D9210 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		539544432959BDD9000D9210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539544452959C9B0000D9210 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		53962A3A295BC7E1006EFDB2 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
+		53962A3C295BCA3E006EFDB2 /* Preferences+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preferences+Size.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5308EB0E295B039300B55E64 /* AudioPlayer.swift */,
+				53962A3C295BCA3E006EFDB2 /* Preferences+Size.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				53090132295B284400339BE1 /* NavigationBarView.swift */,
+				53962A3A295BC7E1006EFDB2 /* SegmentedControlView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -299,8 +305,10 @@
 				5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */,
 				53090133295B284400339BE1 /* NavigationBarView.swift in Sources */,
 				5308EB0F295B039300B55E64 /* AudioPlayer.swift in Sources */,
+				53962A3B295BC7E1006EFDB2 /* SegmentedControlView.swift in Sources */,
 				539544462959C9B0000D9210 /* MainView.swift in Sources */,
 				539544202959BCB3000D9210 /* QuranApp.swift in Sources */,
+				53962A3D295BCA3E006EFDB2 /* Preferences+Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

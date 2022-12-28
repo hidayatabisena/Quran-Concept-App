@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     // MARK: - PROPERTIES
+    @State private var select: Int = 0
+    private var items = ["Surah", "Para", "Page", "Hijb"]
     
     // MARK: - BODY
     var body: some View {
@@ -27,6 +29,15 @@ struct HomeView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     greetingsCard
+                    VStack {
+                        SegmentedControlView(items: items, selection: $select)
+                            .padding(.vertical, 16)
+                        
+                        Text("Page title \"\(items[select])\"")
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                    }
                 }
                 
             } //: VSTACK

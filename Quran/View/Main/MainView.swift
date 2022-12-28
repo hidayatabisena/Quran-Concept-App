@@ -15,7 +15,7 @@ struct MainView: View {
     // MARK: - BODY
     var body: some View {
         TabView(selection: $tabSelection) {
-            Text("Home")
+            HomeView()
                 .tabItem {
                     Label("Home", image: tabSelection == 0 ? "home_active" : "home")
                 }
