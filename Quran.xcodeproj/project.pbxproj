@@ -12,6 +12,10 @@
 		53090133295B284400339BE1 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090132295B284400339BE1 /* NavigationBarView.swift */; };
 		53090135295B2CBE00339BE1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53090134295B2CBE00339BE1 /* HomeView.swift */; };
 		53534CE6295C0C6A005F2341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */; };
+		53534CE9295C16C3005F2341 /* verses.json in Resources */ = {isa = PBXBuildFile; fileRef = 53534CE8295C16C3005F2341 /* verses.json */; };
+		53534CEB295C1773005F2341 /* Verses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534CEA295C1773005F2341 /* Verses.swift */; };
+		53534CEE295C1869005F2341 /* CodableBundleExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534CED295C1869005F2341 /* CodableBundleExt.swift */; };
+		53534CF0295C19BF005F2341 /* VersesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53534CEF295C19BF005F2341 /* VersesListView.swift */; };
 		5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEFD295A82F5005FEB0C /* OnboardingView.swift */; };
 		5364DEFF295A873F005FEB0C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544412959BD58000D9210 /* Poppins-Black.ttf */; };
 		5364DF00295A873F005FEB0C /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539544422959BD58000D9210 /* Poppins-BlackItalic.ttf */; };
@@ -47,6 +51,10 @@
 		53090132295B284400339BE1 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		53090134295B2CBE00339BE1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53534CE8295C16C3005F2341 /* verses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = verses.json; sourceTree = "<group>"; };
+		53534CEA295C1773005F2341 /* Verses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verses.swift; sourceTree = "<group>"; };
+		53534CED295C1869005F2341 /* CodableBundleExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExt.swift; sourceTree = "<group>"; };
+		53534CEF295C19BF005F2341 /* VersesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersesListView.swift; sourceTree = "<group>"; };
 		5364DEFD295A82F5005FEB0C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5395441C2959BCB3000D9210 /* Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quran.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5395441F2959BCB3000D9210 /* QuranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranApp.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				53090134295B2CBE00339BE1 /* HomeView.swift */,
+				53534CEF295C19BF005F2341 /* VersesListView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -114,6 +123,22 @@
 				53962A3E295BE145006EFDB2 /* ComingSoonPageView.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		53534CE7295C16AF005F2341 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				53534CE8295C16C3005F2341 /* verses.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		53534CEC295C1859005F2341 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53534CED295C1869005F2341 /* CodableBundleExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		539544132959BCB3000D9210 = {
@@ -136,10 +161,11 @@
 			isa = PBXGroup;
 			children = (
 				539544432959BDD9000D9210 /* Info.plist */,
+				53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */,
 				539544212959BCB3000D9210 /* ContentView.swift */,
 				5395441F2959BCB3000D9210 /* QuranApp.swift */,
-				53534CE5295C0C6A005F2341 /* LaunchScreen.storyboard */,
 				539544232959BCB4000D9210 /* Assets.xcassets */,
+				53534CEC295C1859005F2341 /* Extensions */,
 				5395442F2959BCFC000D9210 /* Model */,
 				539544252959BCB4000D9210 /* Preview Content */,
 				5395442D2959BCC8000D9210 /* Resources */,
@@ -160,6 +186,7 @@
 		5395442D2959BCC8000D9210 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53534CE7295C16AF005F2341 /* Data */,
 				5308EB0B295B024900B55E64 /* chimeup.mp3 */,
 				539544302959BD33000D9210 /* Font */,
 			);
@@ -179,6 +206,7 @@
 		5395442F2959BCFC000D9210 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				53534CEA295C1773005F2341 /* Verses.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +317,7 @@
 				5364DF08295A873F005FEB0C /* Poppins-Light.ttf in Resources */,
 				5364DF09295A873F005FEB0C /* Poppins-LightItalic.ttf in Resources */,
 				5364DF0A295A873F005FEB0C /* Poppins-Medium.ttf in Resources */,
+				53534CE9295C16C3005F2341 /* verses.json in Resources */,
 				5364DF0B295A873F005FEB0C /* Poppins-MediumItalic.ttf in Resources */,
 				5364DF0C295A873F005FEB0C /* Poppins-Regular.ttf in Resources */,
 				5364DF0D295A873F005FEB0C /* Poppins-SemiBold.ttf in Resources */,
@@ -309,12 +338,15 @@
 			files = (
 				539544222959BCB3000D9210 /* ContentView.swift in Sources */,
 				53090135295B2CBE00339BE1 /* HomeView.swift in Sources */,
+				53534CEE295C1869005F2341 /* CodableBundleExt.swift in Sources */,
 				5364DEFE295A82F5005FEB0C /* OnboardingView.swift in Sources */,
 				53090133295B284400339BE1 /* NavigationBarView.swift in Sources */,
 				5308EB0F295B039300B55E64 /* AudioPlayer.swift in Sources */,
 				53962A3F295BE145006EFDB2 /* ComingSoonPageView.swift in Sources */,
 				53962A3B295BC7E1006EFDB2 /* SegmentedControlView.swift in Sources */,
+				53534CF0295C19BF005F2341 /* VersesListView.swift in Sources */,
 				539544462959C9B0000D9210 /* MainView.swift in Sources */,
+				53534CEB295C1773005F2341 /* Verses.swift in Sources */,
 				539544202959BCB3000D9210 /* QuranApp.swift in Sources */,
 				53962A3D295BCA3E006EFDB2 /* Preferences+Size.swift in Sources */,
 			);

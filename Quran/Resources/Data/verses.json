@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "imageNumber": "number1",
+    "surah": "Al-Fatihah",
+    "ayat": "Meccan",
+    "verses": 7,
+    "image": "ayat-fatiah"
+  },
+  {
+    "id": 2,
+    "imageNumber": "number2",
+    "surah": "Al-Baqarah",
+    "ayat": "Medinian",
+    "verses": 286,
+    "image": "ayat-baqarah"
+  },
+  {
+    "id": 3,
+    "imageNumber": "number3",
+    "surah": "Al-Imran",
+    "ayat": "Meccan",
+    "verses": 200,
+    "image": "ayat-imran"
+  },
+  {
+    "id": 4,
+    "imageNumber": "number4",
+    "surah": "An-Nisa",
+    "ayat": "Meccan",
+    "verses": 176,
+    "image": "ayat-nisa"
+  }
+]

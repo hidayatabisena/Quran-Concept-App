@@ -11,6 +11,7 @@ struct HomeView: View {
     // MARK: - PROPERTIES
     @State private var select: Int = 0
     private var items = ["Surah", "Para", "Page", "Hijb"]
+    let verses: [Verses] = Bundle.main.decode("verses.json")
     
     // MARK: - BODY
     var body: some View {
@@ -29,15 +30,19 @@ struct HomeView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     greetingsCard
+                    
+                    // MARK: - SEGMENTED CONTROL
                     VStack {
                         SegmentedControlView(items: items, selection: $select)
                             .padding(.vertical, 16)
                         
                         if select == 0 {
+                            ForEach(verses) { verse in
+                                VersesListView(verses: verse)
+                            }
+                        } else {
                             Text("Page title \"\(items[select])\"")
                                 .foregroundColor(.white)
-                        } else {
-                            EmptyView()
                         }
                     }
                 }

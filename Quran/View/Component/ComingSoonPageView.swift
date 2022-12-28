@@ -59,7 +59,7 @@ struct ComingSoonPageView: View {
                     .offset(y: isAnimated ? 65 : -25)
                     .onAppear {
                         withAnimation(.easeOut(duration: 0.5)) {
-                            isAnimated.toggle()
+                            isAnimated = true
                         }
                     }
                     
