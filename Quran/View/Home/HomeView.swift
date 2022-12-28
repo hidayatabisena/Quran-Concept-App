@@ -33,16 +33,18 @@ struct HomeView: View {
                         SegmentedControlView(items: items, selection: $select)
                             .padding(.vertical, 16)
                         
-                        Text("Page title \"\(items[select])\"")
-                            .foregroundColor(.white)
-                        
-                        Spacer()
+                        if select == 0 {
+                            Text("Page title \"\(items[select])\"")
+                                .foregroundColor(.white)
+                        } else {
+                            EmptyView()
+                        }
                     }
                 }
                 
             } //: VSTACK
             .background(Color("MainBgDark"))
-            .ignoresSafeArea(.all, edges: .all)
+            //.ignoresSafeArea(.all, edges: .all)
             
         } //: ZSTACK
         .ignoresSafeArea(.all, edges: .top)

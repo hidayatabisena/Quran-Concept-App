@@ -21,32 +21,33 @@ struct MainView: View {
                 }
                 .tag(0)
             
-            Text("Translate")
+            ComingSoonPageView()
                 .tabItem {
                     Label("Translate", image: tabSelection == 1 ? "translate_active" : "translate")
                 }
                 .tag(1)
             
-            Text("Pray")
+            ComingSoonPageView()
                 .tabItem {
                     Label("Pray", image: tabSelection == 2 ? "shalat_active" : "shalat")
                 }
                 .tag(2)
             
-            Text("Dua")
+            ComingSoonPageView()
                 .tabItem {
                     Label("Dua", image: tabSelection == 3 ? "dua_active" : "dua")
                 }
                 .tag(3)
                 .badge("New")
             
-            Text("Markah")
+            ComingSoonPageView()
                 .tabItem {
                     Label("Markah", image: tabSelection == 4 ? "markah_active" : "markah")
                 }
                 .tag(4)
                 .badge(3)
         }
+        .preferredColorScheme(.dark)
     }
 }
 
