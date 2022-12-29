@@ -7,7 +7,7 @@ I found this [Figma UI Design](https://www.figma.com/community/file/966921639679
 ## Final work
 
 One demo worth a thousand presentation 
-![Quran App Concept](https://res.cloudinary.com/moyadev/image/upload/v1672321803/sena/Simulator_29-12-2022_at_20.45_fus7nb.gif)
+![Quran App Concept](https://res.cloudinary.com/moyadev/image/upload/v1672322037/sena/demo_kulndm.png)
 
 
 ## Authors
