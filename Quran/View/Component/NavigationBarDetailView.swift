@@ -9,14 +9,15 @@ import SwiftUI
 
 struct NavigationBarDetailView: View {
     // MARK: - PROPERTIES
-    @EnvironmentObject var surah: Surah
+    //    @EnvironmentObject var surah: Surah
+    @StateObject var surah = Surah()
+    @Environment(\.dismiss) var dismiss
     
     // MARK: - BODY
     var body: some View {
         HStack {
             Button {
-                surah.showingSurah = false
-                surah.selectedSurah = nil
+                dismiss()
             } label: {
                 Image("backbutton")
                     .resizable()
@@ -34,6 +35,7 @@ struct NavigationBarDetailView: View {
             }
 
         }
+        .environmentObject(Surah())
     }
 }
 

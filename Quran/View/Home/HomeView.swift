@@ -12,6 +12,10 @@ struct HomeView: View {
     @State private var select: Int = 0
     private var items = ["Surah", "Para", "Page", "Hijb"]
     let verses: [Verses] = Bundle.main.decode("verses.json")
+    @State private var showingDetailSurah = false
+    
+    //    @EnvironmentObject var surah: Surah
+    @StateObject var surah = Surah()
     
     // MARK: - BODY
     var body: some View {
@@ -19,38 +23,51 @@ struct HomeView: View {
         let window = windowScene?.windows.first
         
         ZStack {
-            VStack(alignment: .leading, spacing: 0) {
-                NavigationBarView()
-                    .padding(.horizontal, 15)
-                    .padding(.bottom)
-                    .padding(.top, window?.safeAreaInsets.top ?? 15)
-                    .background(Color("MainBgDark"))
-                    .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    greetingsCard
+            if surah.showingSurah == false {
+                VStack(alignment: .leading, spacing: 0) {
+                    NavigationBarView()
+                        .padding(.horizontal, 15)
+                        .padding(.bottom)
+                        .padding(.top, window?.safeAreaInsets.top ?? 15)
+                        .background(Color("MainBgDark"))
+                        .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
                     
-                    // MARK: - SEGMENT MENU
-                    VStack {
-                        SegmentedControlView(items: items, selection: $select)
-                            .padding(.vertical, 16)
+                    ScrollView(.vertical, showsIndicators: false) {
+                        greetingsCard
                         
-                        if select == 0 {
-                            ForEach(verses) { verse in
-                                VersesListView(verses: verse)
+                        // MARK: - SEGMENT MENU
+                        VStack {
+                            SegmentedControlView(items: items, selection: $select)
+                                .padding(.vertical, 16)
+                            
+                            if select == 0 {
+                                ForEach(verses) { verse in
+                                    VersesListView(verses: verse)
+                                        .padding(.horizontal, 16)
+                                        .onTapGesture {
+                                           // surah.showingSurah = true
+                                            showingDetailSurah = true
+                                        }
+                                }
+                            } else {
+                                Text("Page title \"\(items[select])\"")
+                                    .foregroundColor(.white)
                             }
-                        } else {
-                            Text("Page title \"\(items[select])\"")
-                                .foregroundColor(.white)
                         }
                     }
+                    
+                } //: VSTACK
+                .background(Color("MainBgDark"))
+                .sheet(isPresented: $showingDetailSurah) {
+                    SurahDetailView()
                 }
-                
-            } //: VSTACK
-            .background(Color("MainBgDark"))
+            } else {
+                SurahDetailView()
+            }
             //.ignoresSafeArea(.all, edges: .all)
             
         } //: ZSTACK
+        .environmentObject(Surah())
         .ignoresSafeArea(.all, edges: .top)
     }
 }
@@ -80,6 +97,7 @@ extension HomeView {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(Surah())
     }
 }
 

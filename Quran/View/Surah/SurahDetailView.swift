@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SurahDetailView: View {
     // MARK: - PROPERTIES
-    @EnvironmentObject var surah: Surah
+    //    @EnvironmentObject var surah: Surah
+    @StateObject var surah = Surah()
     
     // MARK: - BODY
     var body: some View {
@@ -25,7 +26,7 @@ struct SurahDetailView: View {
                     .background(Color("MainBgDark"))
                     .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
                 
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false) {
                     Image("Card")
                         .resizable()
                         .scaledToFit()
@@ -65,6 +66,7 @@ struct SurahDetailView: View {
             .background(Color("MainBgDark"))
         } //: ZSTACK
         .ignoresSafeArea(.all, edges: .top)
+        .environmentObject(Surah())
     }
 }
 

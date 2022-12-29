@@ -9,5 +9,4 @@ import Foundation
 
 class Surah: ObservableObject {
     @Published var showingSurah: Bool = false
-    @Published var selectedSurah: Verses?
 }
